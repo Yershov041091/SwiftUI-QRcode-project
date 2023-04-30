@@ -14,6 +14,8 @@
 		554354FC29FE624700712B2E /* QRCodeprojectNewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554354FB29FE624700712B2E /* QRCodeprojectNewTests.swift */; };
 		5543550629FE624700712B2E /* QRCodeprojectNewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543550529FE624700712B2E /* QRCodeprojectNewUITests.swift */; };
 		5543550829FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543550729FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift */; };
+		5543551529FE65BF00712B2E /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543551429FE65BF00712B2E /* Prospects.swift */; };
+		5543551729FE65F100712B2E /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543551629FE65F100712B2E /* MeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5543550129FE624700712B2E /* QRCodeprojectNewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeprojectNewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5543550529FE624700712B2E /* QRCodeprojectNewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeprojectNewUITests.swift; sourceTree = "<group>"; };
 		5543550729FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeprojectNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5543551429FE65BF00712B2E /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
+		5543551629FE65F100712B2E /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			children = (
 				554354E929FE624500712B2E /* QRCodeprojectNewApp.swift */,
 				554354EB29FE624500712B2E /* ContentView.swift */,
+				5543551429FE65BF00712B2E /* Prospects.swift */,
+				5543551629FE65F100712B2E /* MeView.swift */,
 				554354ED29FE624700712B2E /* Assets.xcassets */,
 				554354EF29FE624700712B2E /* QRCodeprojectNew.entitlements */,
 				554354F029FE624700712B2E /* Preview Content */,
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5543551729FE65F100712B2E /* MeView.swift in Sources */,
 				554354EC29FE624500712B2E /* ContentView.swift in Sources */,
 				554354EA29FE624500712B2E /* QRCodeprojectNewApp.swift in Sources */,
+				5543551529FE65BF00712B2E /* Prospects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
