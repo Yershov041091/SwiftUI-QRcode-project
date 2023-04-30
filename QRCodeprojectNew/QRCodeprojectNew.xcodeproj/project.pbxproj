@@ -16,6 +16,7 @@
 		5543550829FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543550729FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift */; };
 		5543551529FE65BF00712B2E /* Prospects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543551429FE65BF00712B2E /* Prospects.swift */; };
 		5543551729FE65F100712B2E /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543551629FE65F100712B2E /* MeView.swift */; };
+		5543551929FE737A00712B2E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5543551829FE737A00712B2E /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		5543550729FE624700712B2E /* QRCodeprojectNewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeprojectNewUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		5543551429FE65BF00712B2E /* Prospects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospects.swift; sourceTree = "<group>"; };
 		5543551629FE65F100712B2E /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		5543551829FE737A00712B2E /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				554354E929FE624500712B2E /* QRCodeprojectNewApp.swift */,
 				554354EB29FE624500712B2E /* ContentView.swift */,
 				5543551429FE65BF00712B2E /* Prospects.swift */,
+				5543551829FE737A00712B2E /* Prospect.swift */,
 				5543551629FE65F100712B2E /* MeView.swift */,
 				554354ED29FE624700712B2E /* Assets.xcassets */,
 				554354EF29FE624700712B2E /* QRCodeprojectNew.entitlements */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5543551729FE65F100712B2E /* MeView.swift in Sources */,
+				5543551929FE737A00712B2E /* Prospect.swift in Sources */,
 				554354EC29FE624500712B2E /* ContentView.swift in Sources */,
 				554354EA29FE624500712B2E /* QRCodeprojectNewApp.swift in Sources */,
 				5543551529FE65BF00712B2E /* Prospects.swift in Sources */,
