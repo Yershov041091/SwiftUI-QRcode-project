@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CodeScanner
 
 struct Prospects: View {
     //create a filter that'll filter our ProspectView
@@ -14,6 +15,7 @@ struct Prospects: View {
     }
     
     @EnvironmentObject var prospectsData: ProspectsData
+    @State private var isShowingScaner = false
     
     let filter: FilterType
     
@@ -32,14 +34,13 @@ struct Prospects: View {
                 .navigationTitle(title)
                 .toolbar {
                     Button {
-                        let prospect = Prospect()
-                        prospect.name = "Artem Yershov"
-                        prospect.email = "centr@altec.ua"
-                        prospect.isContacted = true
-                        prospectsData.people.append(prospect)
+                        isShowingScaner = true
                     } label: {
                         Label("Scan", systemImage: "qrcode.viewfinder")
                     }
+                }
+                .sheet(isPresented: $isShowingScaner) {
+                    CodeScannerView(codeTypes: [.qr], simulatedData: "Yershov Artem \n altek.ua", completion: scanHandle)
                 }
         }
     }
@@ -61,6 +62,23 @@ struct Prospects: View {
             return prospectsData.people.filter {$0.isContacted}
         case .uncontacted:
             return prospectsData.people.filter {!$0.isContacted}
+        }
+    }
+    func scanHandle(result: Result<ScanResult, ScanError>){
+        isShowingScaner = false
+        
+        switch result {
+        case .success(let success):
+            let details = success.string.components(separatedBy: "\n")
+            guard details.count == 2 else { return }
+            
+            let people = Prospect()
+            people.name = details[0]
+            people.email = details[1]
+            prospectsData.people.append(people)
+            
+        case .failure(let failure):
+            print("Failed scan: \(failure.localizedDescription)")
         }
     }
 }
