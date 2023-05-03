@@ -29,6 +29,23 @@ struct Prospects: View {
                         Text(prospect.email)
                             .foregroundColor(.secondary)
                     }
+                    .swipeActions {
+                        if prospect.isContacted {
+                            Button {
+                                prospectsData.toggle(prospect)
+                            } label: {
+                                Label("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark")
+                            }
+                            .tint(.blue)
+                        } else {
+                            Button {
+                                prospectsData.toggle(prospect)
+                            } label: {
+                                Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
+                            }
+                            .tint(.green)
+                        }
+                    }
                 }
             }
                 .navigationTitle(title)
